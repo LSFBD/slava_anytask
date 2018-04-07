@@ -153,6 +153,7 @@ namespace quick_sort
 			QuickSortTwoTables(array, array2 , 0, len == 0 ? len : len - 1);
 		}
 
+
 		private static void swap<T>(ref T lhs, ref T rhs)
 		{
 			T temp = lhs;
