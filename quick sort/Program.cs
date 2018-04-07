@@ -125,6 +125,33 @@ namespace quick_sort
 			var len = array.Length;
 			Sort(array, 0, len == 0 ? len : len - 1);
 		}
+		
+		static void QuickSortTwoTables(int[] array, object[] array2, int begin, int end)
+		{
+			if (end == begin) return;
+			var pivot = array[end];
+			var storeIndex = begin;
+			for (int i = begin; i <= end - 1; i++)
+			{
+				if (array[i] <= pivot)
+				{
+					swap(ref array[i], ref array[storeIndex]);
+					swap(ref array2[i], ref array2[storeIndex]);
+					storeIndex++;
+				}
+			}
+
+			swap(ref array[storeIndex], ref array[end]);
+			swap(ref array2[storeIndex], ref array2[end]);
+
+			if (storeIndex > begin) QuickSortTwoTables(array, array2, begin, storeIndex - 1);
+			if (storeIndex < end) QuickSortTwoTables(array, array2, storeIndex + 1, end);
+		}
+		public static void QuickSortTwoTables(int[] array, object[] array2)
+		{
+			var len = array.Length;
+			QuickSortTwoTables(array, array2 , 0, len == 0 ? len : len - 1);
+		}
 
 		private static void swap<T>(ref T lhs, ref T rhs)
 		{
