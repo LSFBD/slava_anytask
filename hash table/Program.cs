@@ -74,7 +74,6 @@ namespace hash_table
 
 		static void Test(string name, object func)
 		{
-			Console.SetCursorPosition(0, Console.CursorTop);
 			Console.Write("тест {0} - {1}\n", name, (bool)func ? "пройден" : "завален");
 		}
 
