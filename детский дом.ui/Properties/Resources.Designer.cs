@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Properties {
+namespace детский_дом.ui.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("детский_дом.ui.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на &lt;RSAKeyValue&gt;&lt;Modulus&gt;t+qBow+Cwh6O0yNUtOIR/PW8XvKWEfxz2yeKOzyiMbEIpldyI50aGF05/QlPhGuoFr6QyR4a5bVsyX5eduro9/mLrs9SnYai0nlCR/rwmMf+G1pvRF45LgDj/GefNj9iCWDarS0qcpgl3BxxOEgCgHMpVBXeZpdlqL250qTUL50=&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;P&gt;9Go3IDnt0zfp1/339qO+nH33agJ4S22RRwpIsVgXPmGVcagfJyI9ASXZSVrnf/IB1sTcH1GvVND03Cj+THHLxw==&lt;/P&gt;&lt;Q&gt;wKIvNv6rkK1hv7wHjOdEdF1IhEiLDmSahiBNAmXwyZ7ZDEEFJNMAzZ4/ZEP28wUy4mvgRWcS7rGM70XHqciBew==&lt;/Q&gt;&lt;DP&gt;1MwBMNKeyG3+76nTkO4hj5hwp+B8oZdEjChc/+KlYg+OEIWCkgzSNkSguKgntBKdHUMKL05sK5k+Bsy+Ewpkkw==&lt; [остаток строки не уместился]&quot;;.
+        ///   Ищет локализованную строку, похожую на &lt;RSAKeyValue&gt;&lt;Modulus&gt;uPteeQnHYhGfizWRhV00QzGGGhzCTwqKuoKEvGO0ahPFw+1f8Pi3zcDeGHhG6boQZnWbLWnhkwawTMlSdqfIKY6xSXy89I1cVMNdYZqQZY7cL9HecxczmYffpNqGQDEEOFFUbv4n95PPqno5hIjy7DwBkuRyzHDvVOvadzpY4IE=&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;P&gt;1KBFvvx4efWlzknMNbJRZy+/DE44bHV2qnzPbX+/w84dQ0ZL7LJAqdZRazGYQ73lB/lxT7fL1dJrjarzyyAmdw==&lt;/P&gt;&lt;Q&gt;3rd3s3b82SlX97Zv0IymXSkahx9VXR9xh21giN8usVYUK2b4eoEb7Vd1XUW1GYx690oo6BvSVDuYXYziTMlWxw==&lt;/Q&gt;&lt;DP&gt;khWHtd86Wvi2MVQstJvOJ+n7BdZcF9BgdmQIE8BYnYvoOQd8NKSHnuh7yf0qEyjNybvM6StrJX5LnOreUynEow==&lt; [остаток строки не уместился]&quot;;.
         /// </summary>
         internal static string _private {
             get {
@@ -70,7 +70,7 @@ namespace Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на &lt;RSAKeyValue&gt;&lt;Modulus&gt;t+qBow+Cwh6O0yNUtOIR/PW8XvKWEfxz2yeKOzyiMbEIpldyI50aGF05/QlPhGuoFr6QyR4a5bVsyX5eduro9/mLrs9SnYai0nlCR/rwmMf+G1pvRF45LgDj/GefNj9iCWDarS0qcpgl3BxxOEgCgHMpVBXeZpdlqL250qTUL50=&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;/RSAKeyValue&gt;.
+        ///   Ищет локализованную строку, похожую на &lt;RSAKeyValue&gt;&lt;Modulus&gt;uPteeQnHYhGfizWRhV00QzGGGhzCTwqKuoKEvGO0ahPFw+1f8Pi3zcDeGHhG6boQZnWbLWnhkwawTMlSdqfIKY6xSXy89I1cVMNdYZqQZY7cL9HecxczmYffpNqGQDEEOFFUbv4n95PPqno5hIjy7DwBkuRyzHDvVOvadzpY4IE=&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;/RSAKeyValue&gt;.
         /// </summary>
         internal static string _public {
             get {

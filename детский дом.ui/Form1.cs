@@ -49,16 +49,17 @@ namespace детский_дом.ui
 			button4.Enabled = false;
 			button5.Enabled = false;
 
-			license = new OpenLicense(Properties.Resources._private, Properties.Resources._public);
+			license = new OpenLicense(Properties.Resources._public, Properties.Resources._public);
+
 			OpenFileDialog licenseDialog = new OpenFileDialog();
 			licenseDialog.Filter = "Файл лицензии (*.xml)|*.xml";
 			panel1.Enabled = false;
-
 
 			if (licenseDialog.ShowDialog() == DialogResult.OK)
 			{
 				panel1.Enabled = license.TryLoadLicense(licenseDialog.FileName);
 			}
+
 		}
 
 		private void listView1_SelectedIndexChanged(object sender, EventArgs e)
