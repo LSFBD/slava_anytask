@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using System.IO;
 using Детский_дом;
+using Verificator;
 
 namespace детский_дом.ui
 {
@@ -31,7 +32,7 @@ namespace детский_дом.ui
 			elements = 0;
 			InitializeComponent();
 		}
-
+		OpenLicense license;
 		private void Form1_Load(object sender, EventArgs e) {
 			listView1.Columns.Add("ID", 45);
 			listView1.Columns.Add("ФИО", 280);
@@ -47,6 +48,17 @@ namespace детский_дом.ui
 
 			button4.Enabled = false;
 			button5.Enabled = false;
+
+			license = new OpenLicense(Properties.Resources._private, Properties.Resources._public);
+			OpenFileDialog licenseDialog = new OpenFileDialog();
+			licenseDialog.Filter = "Файл лицензии (*.xml)|*.xml";
+			panel1.Enabled = false;
+
+
+			if (licenseDialog.ShowDialog() == DialogResult.OK)
+			{
+				panel1.Enabled = license.TryLoadLicense(licenseDialog.FileName);
+			}
 		}
 
 		private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -132,6 +144,11 @@ namespace детский_дом.ui
 				FileName = fileName;
 				saveFileDialog1.FileName = FileName;
 			}
+		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }

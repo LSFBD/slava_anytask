@@ -9,24 +9,23 @@ namespace Детский_дом
 	public class Children
 	{
 		// имя ребёнка
-		public string FullName;
+		public string FullName { get; set; }
 
 		// дата рождения
-		public DateTime BithDate;
+		public DateTime BithDate { get; set; }
 
 		//личный номер
-		public int ID;
+		public int ID { get; set; }
 
 		// дата поступления в дет дом
-		public DateTime BeginDate;
+		public DateTime BeginDate { get; set; }
 
 		//причина поступленя в дет дом
-		public string Reason;
+		public string Reason { get; set; }
 
-		public Children(int id = 0)
+		public Children()
 		{
 			FullName = "";
-			ID = id;
 			Reason = "не осталось близких";
 			BeginDate = DateTime.Now;
 			BithDate = new DateTime(2001,01,01);
