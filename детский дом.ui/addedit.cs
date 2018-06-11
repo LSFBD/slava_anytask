@@ -16,7 +16,7 @@ namespace детский_дом.ui
 			row = chld;
 			textBox1.Text = row.FullName;
 			textBox2.Text = row.Reason;
-			//maskedTextBox1.Text = Convert.ToString(row.ID);
+			maskedTextBox1.Text = Convert.ToString(row.ID);
 			dateTimePicker2.Value = row.BeginDate;
 			dateTimePicker1.Value = row.BithDate;
 
@@ -37,11 +37,15 @@ namespace детский_дом.ui
 			row.Reason = textBox2.Text;
 			row.BeginDate = dateTimePicker2.Value;
 			row.BithDate = dateTimePicker1.Value;
-			
+			row.ID = int.Parse(maskedTextBox1.Text);
 
 			DialogResult = DialogResult.OK;
 			Dispose();
 		}
 
+		private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+		{
+
+		}
 	}
 }
