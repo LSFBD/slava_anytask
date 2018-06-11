@@ -1,29 +1,20 @@
 ﻿@model IEnumerable<Детский_дом.Children>
 
-@{
-
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    @using (Html.BeginForm("Upload", "Index", FormMethod.Post, new { enctype = "multipart/form-data" }))
+<div style="display:inline-block; position:relative">
+    @using (Html.BeginForm("Upload", "Children", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         <input type="file" name="file" />
         <input type="submit" name="Submit" id="Submit" value="Upload" />
     }
-    @using (Html.BeginForm("Download", "Home"))
+    @using (Html.BeginForm("Download", "Children"))
     {
         <input type="submit" name="Submit" id="Submit" value="EXCEL" />
     }
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
+</div>
+<div>
     <table class="table">
         <tr>
             <th>
@@ -63,7 +54,5 @@
                 </td>
             </tr>
         }
-
     </table>
-</body>
-</html>
+</div>

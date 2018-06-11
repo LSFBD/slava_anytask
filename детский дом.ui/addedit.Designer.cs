@@ -35,10 +35,10 @@
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.label2 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
-			this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-			this.label4 = new System.Windows.Forms.Label();
 			this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
 			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
 			this.SuspendLayout();
 			// 
 			// textBox1
@@ -101,23 +101,6 @@
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// maskedTextBox1
-			// 
-			this.maskedTextBox1.Location = new System.Drawing.Point(12, 109);
-			this.maskedTextBox1.Mask = "99999";
-			this.maskedTextBox1.Name = "maskedTextBox1";
-			this.maskedTextBox1.Size = new System.Drawing.Size(37, 20);
-			this.maskedTextBox1.TabIndex = 10;
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(12, 93);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(18, 13);
-			this.label4.TabIndex = 11;
-			this.label4.Text = "ID";
-			// 
 			// dateTimePicker2
 			// 
 			this.dateTimePicker2.Location = new System.Drawing.Point(183, 109);
@@ -134,6 +117,23 @@
 			this.label5.Size = new System.Drawing.Size(97, 13);
 			this.label5.TabIndex = 13;
 			this.label5.Text = "дата поступления";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(12, 93);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(18, 13);
+			this.label4.TabIndex = 11;
+			this.label4.Text = "ID";
+			// 
+			// maskedTextBox1
+			// 
+			this.maskedTextBox1.Location = new System.Drawing.Point(12, 109);
+			this.maskedTextBox1.Mask = "99999";
+			this.maskedTextBox1.Name = "maskedTextBox1";
+			this.maskedTextBox1.Size = new System.Drawing.Size(37, 20);
+			this.maskedTextBox1.TabIndex = 10;
 			// 
 			// addedit
 			// 
@@ -171,9 +171,9 @@
 		private System.Windows.Forms.DateTimePicker dateTimePicker1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.DateTimePicker dateTimePicker2;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.MaskedTextBox maskedTextBox1;
 	}
 }

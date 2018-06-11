@@ -10,7 +10,7 @@ namespace детский_дом.ui
 {
 	public partial class Form1 : Form
 	{
-		public string FileName = "phones.phns";
+		public string FileName = "file.dio";
 		public int elements { get; private set; }
 		public List<Children> mainList { get; private set; }
 
@@ -39,7 +39,7 @@ namespace детский_дом.ui
 			listView1.Columns.Add("Дата рождения",200);
 
 			openFileDialog1.FileName = FileName;
-			openFileDialog1.Filter = "(*.det)|*.det";
+			openFileDialog1.Filter = "(*.det)|*.det|All files (*.*)|*.*";
 			openFileDialog1.InitialDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
 
 			saveFileDialog1.FileName = openFileDialog1.FileName;
@@ -53,12 +53,12 @@ namespace детский_дом.ui
 
 			OpenFileDialog licenseDialog = new OpenFileDialog();
 			licenseDialog.Filter = "Файл лицензии (*.xml)|*.xml";
-			panel1.Enabled = false;
+			panel1.Enabled = true;
 
-			if (licenseDialog.ShowDialog() == DialogResult.OK)
-			{
-				panel1.Enabled = license.TryLoadLicense(licenseDialog.FileName);
-			}
+			//if (licenseDialog.ShowDialog() == DialogResult.OK)
+			//{
+			//	panel1.Enabled = true;//license.TryLoadLicense(licenseDialog.FileName);
+			//}
 
 		}
 
@@ -88,7 +88,8 @@ namespace детский_дом.ui
 				elements = 0;
 
 				foreach (var v in buffer)
-					addElement(v);
+					if (v != null)
+						addElement(v);
 
 				FileName = fileName;
 				openFileDialog1.FileName = FileName;

@@ -138,7 +138,7 @@ namespace Web_Application.Controllers
 
 				foreach (var value in buffer)
 				{
-
+					if (value == null) continue;
 					db.Children.Add(value);
 					db.SaveChanges();
 				}
